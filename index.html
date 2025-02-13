@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Portfolio || Nayla</title>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-pink-500 border-gray-200 fixed top-0 w-full z-1000">
+        <div class="w-full flex flex-wrap items-center justify-between p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Portfolio Nayla</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white hover:text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 px-3 text-gray-800 bg-gray-100 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-white hover:text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">About
+                            Me</a>
+                    </li>
+                    <li>
+                        <a href="#service"
+                            class="block py-2 px-3 text-white hover:text-gray-800 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-pink-200 w-full pt-20 p-6">
+        <div id="controls-carousel" class="relative h-[500px] w-full bg-pink-200 rounded-xl" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-[500px] overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <div class="w-full justify-start items-end h-full pl-24 pt-68 p-24">
+                        <h1 class="text-xl lg:text-5xl font-bold">Example Heading.</h1>
+                        <h1 class="text-base lg:text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Neque
+                            blanditiis inventore quibusdam sapiente dolorem soluta pariatur tenetur fugiat labore
+                            veniam?.</h1>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="w-full items-end h-full pt-68 p-24">
+                        <h1 class="text-xl lg:text-5xl font-bold text-center">Another example headline.</h1>
+                        <h1 class="text-base lg:text-lg mt-2 text-center">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.
+                            Neque blanditiis inventore quibusdam sapiente dolorem soluta pariatur tenetur fugiat labore
+                            veniam?.</h1>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="w-full items-end h-full pt-68 p-24">
+                        <h1 class="text-xl lg:text-5xl font-bold text-end">One more for good measure.</h1>
+                        <h1 class="text-base lg:text-lg mt-2 text-end">Some representative placeholder content for the
+                            third slide of
+                            this carousel..</h1>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="bg-pink-300 w-full p-12">
+        <h1 class="text-5xl font-bold text-center pt-12">About Us</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-8">
+            <div class="max-w-sm flex flex-col justify-center h-full items-center">
+                <img src="assets/image/image2.jpg" alt="" class="w-[200px] h-[200px] rounded-full">
+                <div class="p-5">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Heading</h5>
+                    </div>
+                    <p class="mb-2 font-normal text-gray-900 text-center">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Saepe, quod.</p>
+                    <div class="w-full flex justify-center items-center">
+                        <a href=""
+                            class="flex justify-center items-center bg-pink-500 py-2 p-2 rounded-lg hover:bg-pink-700 font-medium">Read
+                            more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-sm flex flex-col justify-center h-full items-center">
+                <img src="assets/image/image2.jpg" alt="" class="w-[200px] h-[200px] rounded-full">
+                <div class="p-5">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Heading</h5>
+                    </div>
+                    <p class="mb-2 font-normal text-gray-900 text-center">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Saepe, quod.</p>
+                    <div class="w-full flex justify-center items-center">
+                        <a href=""
+                            class="flex justify-center items-center bg-pink-500 py-2 p-2 rounded-lg hover:bg-pink-700 font-medium">Read
+                            more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-sm flex flex-col justify-center h-full items-center">
+                <img src="assets/image/image2.jpg" alt="" class="w-[200px] h-[200px] rounded-full">
+                <div class="p-5">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Heading</h5>
+                    </div>
+                    <p class="mb-2 font-normal text-gray-900 text-center">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Saepe, quod.</p>
+                    <div class="w-full flex justify-center items-center">
+                        <a href=""
+                            class="flex justify-center items-center bg-pink-500 py-2 p-2 rounded-lg hover:bg-pink-700 font-medium">Read
+                            more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="bg-pink-200 w-full p-12">
+        <h1 class="text-5xl font-bold text-center pt-12">Service</h1>
+        <div class="h-px w-full bg-gray-500 mt-6"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
+            <div class="">
+                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
+                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
+                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
+            </div>
+            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
+                <p class="text-4xl">400px</p>
+            </div>
+        </div>
+        <div class="h-px w-full bg-gray-500 mt-18"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
+            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
+                <p class="text-4xl">400px</p>
+            </div>
+            <div class="">
+                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
+                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
+                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
+            </div>
+        </div>
+        <div class="h-px w-full bg-gray-500 mt-18"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
+            <div class="">
+                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
+                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
+                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
+            </div>
+            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
+                <p class="text-4xl">400px</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-pink-500 shadow-sm">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-white sm:text-center">© 2025
+                <a href="index.html" class="hover:underline">Nayla™</a>. All Rights Reserved.
+            </span>
+            <a href="mailto:naylahumai448@gmail.com" class="flex h-auto items-center gap-1 text-white hover:underline">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>naylahumai448@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
