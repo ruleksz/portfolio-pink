@@ -84,48 +84,58 @@
         </div>
     </nav>
 
-    <section id="home" class="bg-pink-200 w-full pt-20 p-6">
-        <div id="controls-carousel" class="relative h-[500px] w-full bg-pink-200 rounded-xl" data-carousel="static">
+    <section id="home" class="pt-12">
+        <div id="default-carousel" class="relative w-full h-[80vh] bg-pink-200" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-[500px] overflow-hidden rounded-lg">
+            <div class="relative h-[80vh] overflow-hidden rounded-lg">
                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <div class="w-full justify-start items-end h-full pl-24 pt-68 p-24">
-                        <h1 class="text-xl lg:text-5xl font-bold">Example Heading.</h1>
-                        <h1 class="text-base lg:text-lg mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Neque
-                            blanditiis inventore quibusdam sapiente dolorem soluta pariatur tenetur fugiat labore
-                            veniam?.</h1>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="w-full h-full flex flex-col justify-center items-start p-12">
+                        <h1 class="text-4xl">Example headline.</h1>
+                        <p class="text-lg">Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Magni voluptatibus nisi doloremque nihil soluta? Veniam earum
+                            esse non beatae iste.</p>
+                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4">Learn
+                            More &#8594;</a>
                     </div>
                 </div>
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <div class="w-full items-end h-full pt-68 p-24">
-                        <h1 class="text-xl lg:text-5xl font-bold text-center">Another example headline.</h1>
-                        <h1 class="text-base lg:text-lg mt-2 text-center">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.
-                            Neque blanditiis inventore quibusdam sapiente dolorem soluta pariatur tenetur fugiat labore
-                            veniam?.</h1>
+                    <div class="w-full h-full flex flex-col justify-center items-center p-12">
+                        <h1 class="text-4xl">Example headline.</h1>
+                        <p class="text-lg text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+                            voluptatibus nisi doloremque nihil soluta? Veniam earum esse non beatae iste.</p>
+                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4">Learn
+                            More &#8594;</a>
                     </div>
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <div class="w-full items-end h-full pt-68 p-24">
-                        <h1 class="text-xl lg:text-5xl font-bold text-end">One more for good measure.</h1>
-                        <h1 class="text-base lg:text-lg mt-2 text-end">Some representative placeholder content for the
-                            third slide of
-                            this carousel..</h1>
+                    <div class="w-full h-full flex flex-col justify-center items-end p-12">
+                        <h1 class="text-4xl">Example headline.</h1>
+                        <p class="text-lg text-end">Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Magni voluptatibus nisi doloremque nihil soluta? Veniam earum
+                            esse non beatae iste.</p>
+                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4">Learn
+                            More &#8594;</a>
                     </div>
-
                 </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-12 h-1" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-12 h-1" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-12 h-1" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
             </div>
             <!-- Slider controls -->
             <button type="button"
                 class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                <span class="inline-flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800 rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 1 1 5l4 4" />
@@ -136,9 +146,8 @@
             <button type="button"
                 class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                <span class="inline-flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800 rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
@@ -147,12 +156,13 @@
                 </span>
             </button>
         </div>
+
     </section>
 
-    <section id="about" class="bg-pink-300 w-full p-12">
+    <section id="about" class="bg-pink-300 w-full p-4">
         <h1 class="text-5xl font-bold text-center pt-12">About Us</h1>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-2 lg:m-12">
             <div class="max-w-sm flex flex-col justify-center h-full items-center">
                 <img src="assets/image/image2.jpg" alt="" class="w-[200px] h-[200px] rounded-full">
                 <div class="p-5">
@@ -218,43 +228,66 @@
             </div>
         </div>
     </section>
-    <section id="service" class="bg-pink-200 w-full p-12">
+
+    <section id="service" class="bg-pink-200 w-full p-4 pb-5">
         <h1 class="text-5xl font-bold text-center pt-12">Service</h1>
-        <div class="h-px w-full bg-gray-500 mt-6"></div>
+        <div class="w-[100%] h-px bg-gray-400 mx-auto my-5"></div>
+        <div class="overflow-hidden sm:grid sm:grid-cols-2">
+            <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+                <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </h2>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
-            <div class="">
-                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
-                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
-                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
+                    <p class="text-gray-500 md:mt-4">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsam itaque beatae commodi pariatur quisquam ad deserunt consectetur maxime qui?
+                    </p>
+                </div>
             </div>
-            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
-                <p class="text-4xl">400px</p>
+
+            <img alt=""
+                src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="h-56 w-full object-cover sm:h-full" />
+        </div>
+        <div class="w-[100%] h-px bg-gray-400 mx-auto my-5"></div>
+        <div class="overflow-hidden sm:grid sm:grid-cols-2">
+            <img alt=""
+            src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+            class="h-56 w-full object-cover sm:h-full" />
+
+            <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+                <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </h2>
+
+                    <p class="text-gray-500 md:mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
+                        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
+                        quisque ut interdum tincidunt duis.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="h-px w-full bg-gray-500 mt-18"></div>
+        <div class="w-[100%] h-px bg-gray-400 mx-auto my-5"></div>
+        <div class="overflow-hidden sm:grid sm:grid-cols-2">
+            <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+                <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    </h2>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
-            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
-                <p class="text-4xl">400px</p>
+                    <p class="text-gray-500 md:mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
+                        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
+                        quisque ut interdum tincidunt duis.
+                    </p>
+                </div>
             </div>
-            <div class="">
-                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
-                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
-                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
-            </div>
-        </div>
-        <div class="h-px w-full bg-gray-500 mt-18"></div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 w-full mt-10 gap-14 items-center">
-            <div class="">
-                <h1 class="text-4xl">First featurette heading. It’ll blow your mind.</h1>
-                <h1 class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam aliquam
-                    hic quasi minus optio voluptas facilis perferendis iste officia!</h1>
-            </div>
-            <div class="w-[400px] h-[400px] bg-gray-400 flex justify-center items-center lg:ml-24">
-                <p class="text-4xl">400px</p>
-            </div>
+            <img alt=""
+                src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="h-56 w-full object-cover sm:h-full" />
         </div>
 
     </section>
