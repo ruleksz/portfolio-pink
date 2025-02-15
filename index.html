@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio || Nayla</title>
 </head>
 
-<body class="bg-gray-100">
+<body>
     <nav class="bg-pink-500 border-gray-200 fixed top-0 w-full z-1000">
         <div class="w-full flex flex-wrap items-center justify-between p-4">
             <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -84,83 +85,76 @@
         </div>
     </nav>
 
-    <section id="home" class="pt-12">
-        <div id="default-carousel" class="relative w-full h-[80vh] bg-pink-200" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-[80vh] overflow-hidden rounded-lg">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <div class="w-full h-full flex flex-col justify-center items-start p-12">
-                        <img src="assets/image/Desain/logo.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        <h1 class="text-2xl lg:text-4xl z-1000 font-bold">Example headline.</h1>
-                        <p class="text-lg z-1000 text-gray-700 font-medium">Lorem, ipsum dolor sit amet
-                            consectetur adipisicing elit. Magni voluptatibus nisi doloremque nihil soluta? Veniam earum
-                            esse non beatae iste.</p>
-                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4 z-1000">Learn
-                            More &#8594;</a>
+    <!-- carousel -->
+    <div class="carousel" id="home">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="assets/image/bg1.jpg">
+                <div class="content">
+                    <div class="author text-xl">Ini adalah website </div>
+                    <div class="title">Nayla <span class="text-pink-500">Humaira</span></div>
+                    <div class="des text-lg">
+                        <!-- lorem 50 -->
+                        Disini tempat di mana saya membagikan karya, pengalaman, dan perjalanan saya. Jelajahi
+                        portofolio saya dan temukan lebih banyak tentang apa yang saya lakukan!"
                     </div>
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="assets/image/Desain/cover buku.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    <div class="w-full h-full flex flex-col justify-center items-center p-12">
-                        <h1 class="text-2xl lg:text-4xl z-1000 text-white font-bold">Example headline.</h1>
-                        <p class="text-lg z-1000 text-pink-700 font-medium text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
-                            voluptatibus nisi doloremque nihil soluta? Veniam earum esse non beatae iste.</p>
-                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4 z-1000">Learn
-                            More &#8594;</a>
-                    </div>
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="assets/image/Desain/Screenshot 2025-02-12 173253.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    <div class="w-full h-full flex flex-col justify-center items-end p-12">
-                        <h1 class="text-2xl lg:text-4xl z-1000 font-bold">Example headline.</h1>
-                        <p class="text-lg z-1000 text-white font-medium text-end">Lorem, ipsum dolor sit amet
-                            consectetur adipisicing elit. Magni voluptatibus nisi doloremque nihil soluta? Veniam earum
-                            esse non beatae iste.</p>
-                        <a href="#" class="text-white bg-pink-500 hover:bg-pink-700 py-2 px-4 rounded-lg mt-4 z-1000">Learn
-                            More &#8594;</a>
+                    <div class="buttons">
+                        <button class="bg-pink-500 text-white">SEE MORE</button>
                     </div>
                 </div>
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-12 h-1" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-12 h-1" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-12 h-1" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
+            <div class=" item">
+                <img src="assets/image/bg2.jpg">
+                <div class="content">
+                    <div class="author text-xl">Ini adalah website </div>
+                    <div class="title">Nayla <span class="text-pink-500">Humaira</span></div>
+                    <div class="des text-lg">
+                        <!-- lorem 50 -->
+                        Disini tempat di mana saya membagikan karya, pengalaman, dan perjalanan saya. Jelajahi
+                        portofolio saya dan temukan lebih banyak tentang apa yang saya lakukan!"
+                    </div>
+                    <div class="buttons">
+                        <button class="bg-pink-500 text-white">SEE MORE</button>
+                    </div>
+                </div>
             </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span class="inline-flex items-center justify-center">
-                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span class="inline-flex items-center justify-center">
-                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
         </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="assets/image/bg1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/image/bg2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
 
-    </section>
+        <div class="arrows">
+            <button id="prev">
+                < </button>
+                    <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
 
     <section id="about" class="bg-pink-300 w-full p-4">
         <h1 class="text-5xl font-bold text-center pt-12">About Us</h1>
@@ -188,7 +182,8 @@
                 </div>
             </div>
             <div class="max-w-sm flex flex-col justify-center h-full items-center">
-                <img src="assets/image/Lomba/lomba 17 agustus.jpg" alt="" class="w-[200px] h-[200px] rounded-full object-cover">
+                <img src="assets/image/Lomba/lomba 17 agustus.jpg" alt=""
+                    class="w-[200px] h-[200px] rounded-full object-cover">
                 <div class="p-5">
                     <div>
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Heading</h5>
@@ -209,7 +204,8 @@
                 </div>
             </div>
             <div class="max-w-sm flex flex-col justify-center h-full items-center">
-                <img src="assets/image/Lomba/Lomba pidato 3 bahasa.jpg" alt="" class="w-[200px] h-[200px] rounded-full object-cover">
+                <img src="assets/image/Lomba/Lomba pidato 3 bahasa.jpg" alt=""
+                    class="w-[200px] h-[200px] rounded-full object-cover">
                 <div class="p-5">
                     <div>
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Heading</h5>
@@ -243,20 +239,18 @@
                     </h2>
 
                     <p class="text-gray-500 md:mt-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsam itaque beatae commodi pariatur quisquam ad deserunt consectetur maxime qui?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsam itaque beatae
+                        commodi
+                        pariatur quisquam ad deserunt consectetur maxime qui?
                     </p>
                 </div>
             </div>
 
-            <img alt=""
-                src="assets/image/youtube/jelajahi itsi.jpg"
-                class="h-56 w-full object-cover sm:h-full" />
+            <img alt="" src="assets/image/youtube/jelajahi itsi.jpg" class="h-56 w-full object-cover sm:h-full" />
         </div>
         <div class="w-[100%] h-px bg-gray-400 mx-auto my-5"></div>
         <div class="overflow-hidden sm:grid sm:grid-cols-2">
-            <img alt=""
-                src="assets/image/youtube/youtube. film kelas.jpg"
-                class="h-56 w-full object-cover sm:h-full" />
+            <img alt="" src="assets/image/youtube/youtube. film kelas.jpg" class="h-56 w-full object-cover sm:h-full" />
             <div class="p-8 md:p-12 lg:px-16 lg:py-24">
                 <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
                     <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -265,14 +259,49 @@
 
                     <p class="text-gray-500 md:mt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
+                        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet
+                        volutpat
                         quisque ut interdum tincidunt duis.
                     </p>
                 </div>
             </div>
-
         </div>
+        <div class="w-[100%] h-px bg-gray-400 mx-auto my-5"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-2 lg:m-12">
+            <div class="group relative block overflow-hidden">
+                <img src="assets/image/Desain/logo.jpg" alt="..."
+                    class=" h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
 
+                <div class="relative border border-gray-100 bg-white p-6">
+                    <p class="line-clamp-3 text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis iure obcaecati pariatur.
+                        Officiis qui, enim cupiditate aliquam corporis iste.
+                    </p>
+                </div>
+            </div>
+            <div class="group relative block overflow-hidden">
+                <img src="assets/image/Desain/Screenshot 2025-02-12 173253.jpg" alt="..."
+                    class=" h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
+
+                <div class="relative border border-gray-100 bg-white p-6">
+                    <p class="line-clamp-3 text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis iure obcaecati pariatur.
+                        Officiis qui, enim cupiditate aliquam corporis iste.
+                    </p>
+                </div>
+            </div>
+            <div class="group relative block overflow-hidden">
+                <img src="assets/image/Desain/cover buku.jpg" alt="..."
+                    class=" h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
+
+                <div class="relative border border-gray-100 bg-white p-6">
+                    <p class="line-clamp-3 text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nobis iure obcaecati pariatur.
+                        Officiis qui, enim cupiditate aliquam corporis iste.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -286,7 +315,8 @@
                 <ion-icon name="mail-outline"></ion-icon>
                 <p>naylahumai448@gmail.com</p>
             </a>
-            <a href="https://www.instagram.com/naylanayra12/" class="flex h-auto items-center gap-1 text-white hover:underline">
+            <a href="https://www.instagram.com/naylanayra12/"
+                class="flex h-auto items-center gap-1 text-white hover:underline">
                 <ion-icon name="logo-instagram"></ion-icon>
                 <p>@naylanayra12</p>
             </a>
@@ -295,6 +325,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
